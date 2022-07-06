@@ -25,8 +25,8 @@ def move_files_to_folder(list_of_files, destination_folder):
 # os.makedirs('dataset', exist_ok = True)
 forder_image_train = 'dataset/images/train'
 forder_image_val = 'dataset/images/val'
-forder_label_train = 'dataset/label/train'
-forder_label_val = 'dataset/label/val'
+forder_label_train = 'dataset/labels/train'
+forder_label_val = 'dataset/labels/val'
 os.makedirs(forder_image_train, exist_ok = True)
 os.makedirs(forder_image_val, exist_ok = True)
 os.makedirs(forder_label_train, exist_ok = True)
