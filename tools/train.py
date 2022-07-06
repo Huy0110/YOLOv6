@@ -19,6 +19,8 @@ from yolov6.utils.config import Config
 from yolov6.utils.events import LOGGER, save_yaml
 from yolov6.utils.envs import get_envs, select_device, set_random_seed
 from yolov6.utils.general import increment_name, find_latest_checkpoint
+from clearml import Task
+task = Task.init(project_name='Stamp VATM', task_name='test set up 1st yolov6')
 
 
 def get_args_parser(add_help=True):
