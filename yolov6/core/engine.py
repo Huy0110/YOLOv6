@@ -131,6 +131,7 @@ class Trainer:
 
             save_ckpt_dir = osp.join(self.save_dir, 'weights')
             save_checkpoint(ckpt, (is_val_epoch) and (self.ap == self.best_ap), save_ckpt_dir, model_name='last_ckpt')
+            save_checkpoint(ckpt, (is_val_epoch) and (self.ap == self.best_ap), save_ckpt_dir, model_name=str(self.epoch))
             del ckpt
             # log for tensorboard
             write_tblog(self.tblogger, self.epoch, self.evaluate_results, self.mean_loss)
