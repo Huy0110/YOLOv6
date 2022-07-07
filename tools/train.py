@@ -20,7 +20,7 @@ from yolov6.utils.events import LOGGER, save_yaml
 from yolov6.utils.envs import get_envs, select_device, set_random_seed
 from yolov6.utils.general import increment_name, find_latest_checkpoint
 from clearml import Task
-task = Task.init(project_name='Stamp VATM', task_name='test set up 1st yolov6')
+task = Task.init(project_name='Stamp VATM', task_name='test set up 2nd yolov6')
 
 
 def get_args_parser(add_help=True):
@@ -32,7 +32,7 @@ def get_args_parser(add_help=True):
     parser.add_argument('--epochs', default=400, type=int, help='number of total epochs to run')
     parser.add_argument('--workers', default=8, type=int, help='number of data loading workers (default: 8)')
     parser.add_argument('--device', default='0', type=str, help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
-    parser.add_argument('--eval-interval', default=20, type=int, help='evaluate at every interval epochs')
+    parser.add_argument('--eval-interval', default=1, type=int, help='evaluate at every interval epochs')
     parser.add_argument('--eval-final-only', action='store_true', help='only evaluate at the final epoch')
     parser.add_argument('--heavy-eval-range', default=50, type=int,
                         help='evaluating every epoch for last such epochs (can be jointly used with --eval-interval)')
