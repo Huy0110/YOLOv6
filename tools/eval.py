@@ -81,6 +81,7 @@ def run(data,
     model.eval()
     pred_result = val.predict_model(model, dataloader, task)
     eval_result = val.eval_model(pred_result, model, dataloader, task)
+    print(eval_result)
     return eval_result
 
 
