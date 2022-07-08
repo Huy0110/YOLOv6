@@ -6,5 +6,5 @@ test: # test images (optional)
 # whether it is coco dataset, only coco dataset should be set to True.
 is_coco: False
 # Classes
-nc: 4  # number of classes
-names: ['dau_hoa_toc', 'dau_hoa_toc_hen_gio', 'dau_khan', 'dau_thuong_khan']  # class names
+nc: 1  # number of classes
+names: ['stamp']  # class names
