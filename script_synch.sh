@@ -1,1 +1,1 @@
-while true; do rclone copy /root/YOLOv6/runs/train/exp8/weights new:Yolov6/07072022 ; sleep 900; done
+while true; do rclone copy /root/YOLOv6/runs/train/exp/weights new:Yolov6/13072022/part1 ; sleep 900; done

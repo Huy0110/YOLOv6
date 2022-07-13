@@ -20,7 +20,7 @@ from yolov6.utils.events import LOGGER, save_yaml
 from yolov6.utils.envs import get_envs, select_device, set_random_seed
 from yolov6.utils.general import increment_name, find_latest_checkpoint
 from clearml import Task
-task = Task.init(project_name='Stamp VATM', task_name='test set up 2nd yolov6')
+task = Task.init(project_name='Stamp VATM Detect', task_name='Data 20k new template 13072022')
 
 
 def get_args_parser(add_help=True):
